@@ -15,5 +15,5 @@ export const transformTypeName = (name: string) => {
   if (config.types.name === 'PascalCase') {
     return camelcase(name, { pascalCase: true });
   }
-  return name;
+  return `E2E${name}`;
 };
